@@ -1,0 +1,10 @@
+### 测试 glue shell 参数超长问题
+
+```bash
+
+curl 'http://localhost:8080/xxl-job-admin/jobinfo/trigger' \
+-H 'Cookie: XXL_JOB_LOGIN_IDENTITY=3235633132623363626630646236333730396637303730396464343539313061' \
+-H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' \
+-H 'Accept: application/json, text/javascript, */*; q=0.01' \
+-d 'id=2&executorParam=aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff'
+```
